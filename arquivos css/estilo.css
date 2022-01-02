@@ -11,3 +11,19 @@
     justify-content: center;
     align-items: center;
 }
+#container{
+    width: 80vw;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: ;
+}
+.containers{
+    width: calc(90%/3);
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 90%;
+}
