@@ -14,11 +14,6 @@ body{
     text-decoration: none;
     color: black;
 }
-h3{
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 400;
-}
 /*estilizando menu*/
 
 #menu{
@@ -79,9 +74,14 @@ h3{
 
 /*configurando cartões*/
 
+.cartão h3{
+text-transform: uppercase;
+font-size: 2rem;
+font-weight: 400;
+}
 .cartão{
     text-align: center;
-    margin-top: 70px;
+    padding-top: 70px;
     margin-bottom: 40px;
 }
 
@@ -113,17 +113,50 @@ h3{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 .container-inf{
     width: 45%;
+    height: 133px;
+    display: flex;
+    justify-content:space-between;
 }
 
-#container-final p h1{
-    float: left;
+.container-inf-texto{
+ 
 }
-
 #container-final img{
-    float:right;
-    width: 50px;
-    
+    width: 100px;
+    height: 90%;
+}
+/*estilizando o rodapé*/
+
+#rodape{
+    display: flex;
+    flex-direction: column;
+    background-color: #49997c;
+    color: white;
+}
+#formas-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+.contato{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 100px;
+    align-items: center;
+}
+.contato img{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+#copyright h4{
+    text-align: center;
+    margin: 15px 0;
 }
