@@ -25,3 +25,15 @@
 .inf-quarto li{
     width: 25%;
 }
+@media only screen and (max-width: 510px) {
+    .inf-quarto li{
+        width: 50%;
+        margin: 10px 0;
+    }
+    .inf-quarto ul{
+        margin-bottom: 0;
+    }
+    #flex{
+        margin-bottom: 50px;
+    }
+}

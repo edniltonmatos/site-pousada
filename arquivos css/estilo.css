@@ -6,7 +6,7 @@ body{
 
 }
 .tamanho-maximo-container{
-    width: 1024px;
+    width: 80%;
     margin: 0 auto;
 }
 .link{
@@ -29,6 +29,7 @@ body{
     align-items: center;
     height: 100%;
 }
+
 #link-principal{
     font-size: 1.2rem;
     font-weight: 600;
@@ -41,7 +42,7 @@ body{
 #links-de-navegação{
     display: flex;
     justify-content: space-between;
-    width: 20%;
+    width: 200px;
 }
 
 /*estilizando o corpo da página*/
@@ -57,7 +58,6 @@ body{
 }
 #container-textoprincical{
     background-color:rgba(7,163,141,0.7) ;
-    height: 200px;
     border: 1px solid white; 
     border-radius: 5px;
     color: white;
@@ -74,12 +74,12 @@ body{
 
 /*configurando cartões*/
 
-.cartão h3{
-text-transform: uppercase;
-font-size: 2rem;
-font-weight: 400;
+    .cartão h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
 }
-.cartão{
+    .cartão{
     text-align: center;
     padding-top: 70px;
     margin-bottom: 40px;
@@ -121,13 +121,10 @@ font-weight: 400;
     display: flex;
     justify-content:space-between;
 }
-
-.container-inf-texto{
- 
-}
 #container-final img{
     width: 100px;
     height: 90%;
+    margin: auto 0;
 }
 /*estilizando o rodapé*/
 
@@ -159,4 +156,57 @@ font-weight: 400;
 #copyright h4{
     text-align: center;
     margin: 15px 0;
+}
+@media only screen and (max-width: 1025px) {
+    /*tornando sessão quarto flexivel para dispositivos com tamanho entre 1025 a 510 px*/
+
+    .quartos{
+        flex-direction: column;
+    }
+    .quarto{
+        width: 100%;
+        margin: 20px auto;
+    }
+    /*tornando sessão do container final, flexível para dispositivos com tamanho entre 1025 a 510px*/
+    .container-final{
+        flex-direction: column;
+    }
+    .container-inf{
+        width: 100%;
+        margin-top: 5px;
+    }
+    /*configurando o rodapé flexivel*/
+    #formas-contato{
+        flex-wrap: wrap;
+    }
+    .contato{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 510px) {
+    #links-de-navegação {
+        display: none;
+    } 
+    #container-textoprincical h1{
+    font-size: 2rem;
+    padding: 0 5px;
+    }
+    #container-textoprincical h2{
+        display: none;
+    }
+    .container-inf-texto h4{
+        margin: 0;
+    }
+    #formas-contato h3{
+        text-align: center;
+        width: 100%;
+    }
+    .contato{
+        width: 30%;
+        height: 60px;
+        padding: 0;
+    }
+    #formas-contato p{
+        display: none;
+    }
 }
