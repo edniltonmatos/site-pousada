@@ -43,6 +43,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 200px;
+    list-style: none;
 }
 
 /*estilizando o corpo da página*/
@@ -128,7 +129,7 @@ body{
 }
 /*estilizando o rodapé*/
 
-#rodape{
+footer{
     display: flex;
     flex-direction: column;
     background-color: #49997c;
