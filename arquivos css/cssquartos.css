@@ -29,6 +29,7 @@
     .inf-quarto li{
         width: 50%;
         margin: 10px 0;
+        list-style: none;
     }
     .inf-quarto ul{
         margin-bottom: 0;
