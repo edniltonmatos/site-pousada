@@ -14,6 +14,9 @@ body{
     text-decoration: none;
     color: black;
 }
+.link:hover{
+    border-bottom: 2px solid #2eaa9c;
+}
 /*estilizando menu*/
 
 #menu{
@@ -184,7 +187,14 @@ footer{
         width: 45%;
     }
 }
+    button{
+        display: none;
+    }
 @media only screen and (max-width: 510px) {
+    button{
+        display: block;
+    }
+
     #links-de-navegação {
         display: none;
     } 
