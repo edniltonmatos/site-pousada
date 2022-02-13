@@ -20,16 +20,17 @@
     margin-bottom: 50px;
 }
 .inf-quarto li{
-    width: 25%;
+    width: calc(100%/4 - 10px);
 }
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 750px) {
     .inf-quarto li{
-        width: 50%;
+        width: 45%;
         margin: 10px 0;
         list-style: none;
     }
     .inf-quarto ul{
         margin-bottom: 0;
+        padding-left: 0;
     }
     #flex{
         margin-bottom: 50px;
